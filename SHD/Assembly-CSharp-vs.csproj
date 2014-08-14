@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{B1235EE4-71EE-C815-28F8-C3378E5ADB84}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_5_2;UNITY_4_5;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\Agent.cs" />
+     <Compile Include="Assets\Scripts\AgentManager.cs" />
+     <Compile Include="Assets\Scripts\Blockade.cs" />
+     <Compile Include="Assets\Scripts\Bullet.cs" />
+     <Compile Include="Assets\Scripts\Character Viewer\ViewerGUI.cs" />
+     <Compile Include="Assets\Scripts\DefencePoint.cs" />
+     <Compile Include="Assets\Scripts\Destroyer.cs" />
+     <Compile Include="Assets\Scripts\External\vNavigation\Classes\AStar.cs" />
+     <Compile Include="Assets\Scripts\External\vNavigation\Classes\Node.cs" />
+     <Compile Include="Assets\Scripts\External\vNavigation\Classes\NodeBinaryHeap.cs" />
+     <Compile Include="Assets\Scripts\External\vNavigation\vNavAgent.cs" />
+     <Compile Include="Assets\Scripts\External\vNavigation\vNavObstacle.cs" />
+     <Compile Include="Assets\Scripts\External\vNavigation\vNavRay.cs" />
+     <Compile Include="Assets\Scripts\External\vNavigation\vNavSprite.cs" />
+     <Compile Include="Assets\Scripts\FFBullet.cs" />
+     <Compile Include="Assets\Scripts\FireEffect.cs" />
+     <Compile Include="Assets\Scripts\GUI\GUIManager.cs" />
+     <Compile Include="Assets\Scripts\Game Over\GameOver.cs" />
+     <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\Main Menu\MainMenuGUI.cs" />
+     <Compile Include="Assets\Scripts\OilEffect.cs" />
+     <Compile Include="Assets\Scripts\Powers\Blockades.cs" />
+     <Compile Include="Assets\Scripts\Powers\Fire.cs" />
+     <Compile Include="Assets\Scripts\Powers\Lightning.cs" />
+     <Compile Include="Assets\Scripts\Powers\MindControl.cs" />
+     <Compile Include="Assets\Scripts\Powers\Oil.cs" />
+     <Compile Include="Assets\Scripts\Powers\Power.cs" />
+     <Compile Include="Assets\Scripts\Powers\SuperStrength.cs" />
+     <Compile Include="Assets\Scripts\Powers\Telekenesis.cs" />
+     <Compile Include="Assets\Scripts\Powers\TimeControl.cs" />
+     <Compile Include="Assets\Scripts\Powers\Tsunami.cs" />
+     <Compile Include="Assets\Scripts\Powers\Wind.cs" />
+     <Compile Include="Assets\Scripts\ScaleIncreaser.cs" />
+     <Compile Include="Assets\Scripts\Team Builder\TeamBuilderGUI.cs" />
+     <Compile Include="Assets\Scripts\Team Select\TeamSelectGUI.cs" />
+     <Compile Include="Assets\Scripts\TimedKillField.cs" />
+     <Compile Include="Assets\Scripts\WindForce.cs" />
+     <Compile Include="Assets\Scripts\XML\Character.cs" />
+     <Compile Include="Assets\Scripts\XML\CharacterContainer.cs" />
+     <Compile Include="Assets\Scripts\XML\CharacterXML.cs" />
+     <Compile Include="Assets\Scripts\XML\Team.cs" />
+     <Compile Include="Assets\Scripts\XML\TeamContainer.cs" />
+     <Compile Include="Assets\Scripts\XML\TeamXML.cs" />
+     <Compile Include="Assets\Scripts\characterLoaderTest.cs" />
+     <Compile Include="Assets\Scripts\tsunamiPush.cs" />
+     <None Include="Assets\Resources\Characters.xml" />
+     <None Include="Assets\Resources\PlayerTeams.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
